@@ -7,6 +7,9 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+header {
+    border-bottom: 1px solid #DEDEDE;
+}
 .header {
     font-family: 'Open Sans', sans-serif;
     display:flex;  
@@ -35,6 +38,9 @@ body {
     font-weight: 600;
     font-size: 20px;
 }
+.header-nav a:hover {
+    color: #FFC725;
+}
 .header-nav a:after {
     content:"";
     width: 100%;
@@ -53,6 +59,7 @@ body {
     border: none;
     padding: 0;
     gap: 10px;
+    cursor: pointer;
 }
 .button-text {
     color: #443737;
@@ -98,10 +105,17 @@ body {
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
 }
+.breadcrumbs a:hover {
+    color: #FFC725;
+}
 .breadcrumbs a::before {
     content:"/";
     position: relative;
     left: -7px;
+    pointer-events: none;
+}
+.breadcrumbs a:hover::before {
+    color: #DEDEDE;
 }
 .breadcrumbs li:first-child a::before
 {
