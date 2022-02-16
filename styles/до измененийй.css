@@ -14,7 +14,9 @@ header {
     font-family: 'Open Sans', sans-serif;
     display:flex;  
     align-items: center;
-    padding: 26px 0 25px 0;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-bottom: 25px;
 }
 .header-logo {
     display: block;
@@ -27,8 +29,8 @@ header {
 .header-nav {
     display: flex;
     list-style-type: none;
-    padding: 0 295px 0 198px;
-    gap: 47px;
+    padding-left: 0px;
+    gap: 46px;
 }
 .header-nav a {
     color: #443737;
@@ -88,7 +90,7 @@ header {
     background-size: cover;
     background-position: center center;
     padding: 142px 0;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 }
 .breadcrumbs {
     padding-left: 0;
@@ -136,49 +138,5 @@ header {
     margin: 0 auto;
 }
 .banner-box {
-    background-image: url(../images/banner.jpg);
-    color: #FFFFFF;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 100px;
-    padding-left: 100px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-right: 770px;
-}
-.banner-title p {
-    font-weight: 900;
-    font-size: 60px;
-    margin: 0;
-}
-h2 span {
-    font-weight: 600;
-    font-size: 14px;
-    background-color: #F37335;
-    border-radius: 14px;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 5px 18px;
-}
-.banner-text {
-    color: #FAF9F9;
-    font-weight: 400;
-    font-size: 15px;
-    margin-top: 30px;
-    line-height: 1.5;
-}
-a.banner-link {
-    text-decoration: none;
-    color:#1E2F40;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 18px;
-    background-color: #FBB731;
-    border-radius: 5px;
-    padding: 20px 27px;
-    display: inline-block;
+    background-image: url();
 }
