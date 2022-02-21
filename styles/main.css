@@ -16,6 +16,11 @@ header {
     align-items: center;
     padding: 26px 0 25px 0;
 }
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .header-logo {
     display: block;
     background-image: url(../images/logo.svg);
@@ -174,15 +179,20 @@ header {
     margin-top: 0px;
     margin-bottom: 17px;
 }
-a.banner-link {
+.banner-link {
     font-size: 14px;
-    padding: 20px 27px;
+    padding: 18px 25px;
     text-transform: uppercase;
     text-decoration: none;
     color:#1E2F40;
     background-color: #FBB731;
     border-radius: 5px;
+    border: 1px solid #FBB731;
     display: inline-block;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;;
 }
 .menu-header {
     display: flex;
@@ -268,6 +278,10 @@ a.banner-link {
     gap: 10px;
     max-width: 152px;
 }
+.menu-grid-btn:hover {
+    background-color: #F37335;
+}
+}
 .additional-menu-title {
     font-size: 44px;
     font-weight: 700;
@@ -298,7 +312,7 @@ a.banner-link {
     margin-bottom: 19px;
     margin-top: 0;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Lato', sans-serif;
     font-size: 15px;
@@ -306,10 +320,17 @@ a.banner-link {
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list li:hover {
+    color:#FBB731;
+    cursor: pointer;
+}
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+}
+.footer-list a:hover {
+    color:#FBB731;
 }
 .footer-item span {
     color: #DEDEDE;
@@ -317,14 +338,19 @@ a.banner-link {
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel ul {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 14px;
+}
+.footer-list-tel a {
     font-size: 20px;
     color: #FBB731;
-    margin-top: 0;
     font-weight: 800;
 }
-.footer-tel li {
-    margin-bottom: 14px;
+.footer-list-tel a:hover {
+    color: #DEDEDE;
 }
 .footer-list {
     padding-left: 0;
