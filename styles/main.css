@@ -13,6 +13,7 @@ header {
 .header {
     font-family: 'Open Sans', sans-serif;
     display:flex;  
+    justify-content: space-between;
     align-items: center;
     padding: 26px 0 25px 0;
 }
@@ -20,6 +21,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-basis: 68.5%;
 }
 .header-logo {
     display: block;
@@ -32,7 +34,7 @@ header {
 .header-nav {
     display: flex;
     list-style-type: none;
-    padding: 0 295px 0 198px;
+    padding-left: 0;
     gap: 47px;
 }
 .header-nav a {
@@ -146,7 +148,7 @@ header {
     color: #FFFFFF;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: 0 center;
     padding: 100px;
     margin-bottom: 84px;
 }
@@ -544,4 +546,44 @@ body {
     font-weight: 700;
     margin-bottom: 10px;
     margin-top: 0px;
+}
+
+/*Responsive*/
+
+@media (max-width:1000px) {
+    .container {
+        max-width: 738px;
+    }
+    .header-logo {
+        width: 150px;
+        height: 48px;
+        background-size: contain;
+    }
+    .header-nav {
+        gap: 22px;
+    }
+    .header-item {
+        flex-basis: 75.5%;
+    }
+    .bg {
+        margin-bottom: 72px;
+    }
+    .banner-box {
+        background-position: -80px center;
+        padding: 100px 40px 120px;
+    }
+    .menu-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 51px 15px;
+    }
+    .footer {
+        padding-top: 59px;
+        padding-bottom: 71px;
+    }
+    .footer-box {
+        flex-wrap: wrap;
+    }
+    .footer-list-tel a {
+        margin-left: 143px;
+    }
 }
