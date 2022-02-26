@@ -555,7 +555,7 @@ body {
     }
     .footer-item + .footer-list-tel {
         display: none;
-}
+    }
 }
 
 @media (min-width:766px) {
@@ -688,7 +688,6 @@ nav {
 .bg {
     padding: 55px 0;
     margin-bottom: 33px;
-    }
     }
 .banner-box {
     background-position: 17% center;
