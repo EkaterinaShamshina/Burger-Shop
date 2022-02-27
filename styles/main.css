@@ -308,6 +308,7 @@ header {
 .footer-box {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 .footer-logo {
     width: 63px;
@@ -319,6 +320,7 @@ header {
     text-transform: uppercase;
     margin-bottom: 19px;
     margin-top: 5px;
+    line-height: 1.5;
 }
 .footer-list li {
     margin-bottom: 9px;
@@ -592,6 +594,7 @@ body {
     }
     .additional-menu {
         overflow: hidden;
+        height: 680px;
     }
     .additional-menu .menu-grid {
         display: flex;
@@ -613,9 +616,6 @@ body {
     .footer-tel {
         display: none;
     }
-    .footer-item + .footer-list-tel {
-        display: none;
-}
     .footer-list + .footer-list-tel {
         display: block;
     }
@@ -673,8 +673,22 @@ nav {
 .header {
     gap: 21px;
     }
+.additional-menu .container {
+    padding-right: 0;
+    }
+.button-up.visible {
+    display: none;
+    }
 }
 @media (max-width:567px) {
+.header-logo {
+    width: 116px;
+    height: 37px;
+    background-size: contain;
+    }
+.header {
+    padding: 19px 0 19px 0;
+    }
 .title {
     font-size: 37px;
     }
@@ -696,77 +710,89 @@ nav {
     }
 .menu-title {
     font-size: 27px;
+    margin-top: 26px;
     }
 .additional-menu-title {
     font-size: 27px;
-    margin-top: 40px;
+    margin-top: 63px;
     margin-bottom: 20px;
     }
 .menu-select {
     font-size: 12px;
-    flex-basis: 164px;
+    flex-basis: 136px;
+    padding: 13px 24px 13px 15px;
+    background-position: 91% center;
+    margin-bottom: 8px;
     }
-.menu-grid {
-    gap: 20px 10px;
-}
-.menu-grid-cover {
-    height: 210px;
-}
 .menu-grid-cover img {
-    height: 200px;
-    width: 160px;
+    height: 100%;
+    }
+.menu-grid-cover {
+    height: 53vw;
     }
 .menu-grid-title {
-    font-size: 13px;
-    margin-top: 7px;
-    margin-bottom: 0px;
+    font-size: 15px;
+    margin-top: 9px;
+    margin-bottom: 8px;
     }
 .menu-grid-price {
     font-size: 16px;
-    margin-bottom: 7px;
+    margin-bottom: 10px;
     }
 .menu-grid-btn {
     max-width: 129px;
     padding: 9px 13px 7px 20px;
+    }
+.menu-grid {
+    gap: 24px 11px;
 }
 .additional-menu .menu-grid-cover {
-    height: 200px;
+    height: 56vw;
     }
 .additional-menu .menu-grid-item {
-    flex: 0 0 162px;
+    flex: 0 0 38vw;
+    }
+.additional-menu {
+    height: 124vw;
     }
 .additional-menu .menu-grid {
-    padding-bottom: 0px;
-}
+    padding-bottom: 30vw;
+    }
 .footer {
-    margin-top: 61px;
-}
+    margin-top: 52px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    }
 .footer-tel {
-    display: none;
-}
+    display: block;
+    }
 .footer-list + .footer-list-tel {
     display: none;
-}
-.footer-item + .footer-list-tel {
-    display: block;
-    text-align: right;
-}
+    }
 .footer-box {
-    display: block;
-}
-.footer-logo {
-    float: left;
-}
-.footer-item h2 {
-    margin-top: 40px;
-}
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-areas: "logo tel" "link link" "info info";
+    }
+.footer-item:nth-child(1) {
+    grid-area: logo;
+    }
+.footer-item:nth-child(2) {
+    grid-area: link;
+    }
+.footer-item:nth-child(3) {
+    grid-area: info;
+    }
+.footer-tel {
+    grid-area: tel;
+    text-align: right;
+    padding-right: 15px;
+    }
 }
 
 @media (max-width:360px) {
-.header-logo {
-    width: 116px;
-    height: 37px;
-    background-size: contain;
+.menu-grid-title {
+    font-size: 13px;
     }
 }
 
