@@ -617,6 +617,73 @@ body {
     .footer-list + .footer-list-tel {
         display: block;
     }
+    .wrapper {
+        max-width: 738px;
+    }
+    .visual-bg {
+        max-width: 198px;
+    }
+    .content {
+        padding-top: 42px;
+        padding-bottom: 122px;
+        padding-left: 15px;
+        flex: 0 0 527px;
+    }
+    .content-title span {
+        font-size: 22px;
+        margin-bottom: 9px;
+    }
+    .content-title {
+        font-size: 86px;
+        line-height: 1.13;
+        margin-bottom: 26px;
+    }
+    .content-text {
+        font-size: 14px;
+    }
+    .content-link {
+        margin-top: 39px;
+        font-size: 13px;
+        padding: 17px 40px;
+    }
+    .main img {
+        max-width: 64vw;;
+        height: auto;
+        top: 120px;
+        left: -162px;
+    }
+    .promo {
+        padding-top: 107px;
+    }
+    .promo-left {
+        padding: 45px 30px;
+    }
+    .promo-right {
+        padding: 60px 30px;
+    }
+    .promo-right .promo-description {
+        max-width: 299px;
+        margin-bottom: 8px;
+    }
+    .promo {
+        padding-bottom: 0;
+    }
+    .promo a {
+        padding: 18px 40px;
+        font-size: 13px;
+    }
+    .free {
+        margin-bottom: 14px;
+    }
+    .sale {
+        padding: 6px 21px;
+        margin-bottom: 6px;
+    }
+    .cost {
+        margin-bottom: 12px;
+    }
+
+
 }
 
 /* Modal */
@@ -683,6 +750,17 @@ nav {
 .footer-list + .footer-list-tel {
     padding-top: 25px;
     }
+.promo .wrapper {
+    display: grid;
+    grid-gap: 3vw;
+    grid-template-columns: 1fr;
+    }
+.footer {
+    margin-top: 62px;
+    }
+.promo {
+    padding-top: 95px;
+}
 }
 @media (max-width:567px) {
 .header-logo {
@@ -790,6 +868,40 @@ nav {
     grid-area: tel;
     text-align: right;
     }
+.visual-bg {
+    width: 0px;
+    }
+.content-title span {
+    font-size: 14px;
+    }
+.content-title {
+    font-size: 58px;
+    }
+.content-text {
+    font-size: 13px;
+    }
+.content-link {
+    margin-top: 39px;
+    font-size: 13px;
+    padding: 17px 40px;
+    }
+.main img {
+    max-width: 51vw;;
+    height: auto;
+    top: 276px;
+    left: -363px;
+    }
+.cost {
+    font-size: 55px;
+}
+.promo-description {
+    font-size: 13px;
+}
+.free {
+    font-size: 39px;
+}
+.promo-right .promo-description {
+    font-size: 15px;
 }
 
 @media (max-width:360px) {
