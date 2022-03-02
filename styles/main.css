@@ -219,6 +219,7 @@ header {
     font-weight: 400;
     color: #443737;
     border: 1px solid #DEDEDE;
+    background-color: white;
     padding: 13px 30px;
     border-radius: 22px;
     -webkit-appearance: none;
@@ -738,9 +739,6 @@ nav {
 .header {
     gap: 21px;
     }
-.additional-menu .container {
-    padding-right: 0;
-    }
 .button-up.visible {
     display: none;
     }
@@ -828,6 +826,9 @@ nav {
 .menu-grid {
     gap: 24px 11px;
 }
+.additional-menu .menu-grid {
+    gap: 24px 6px;
+}
 .additional-menu .menu-grid-cover {
     height: 56vw;
     }
@@ -902,6 +903,7 @@ nav {
 }
 .promo-right .promo-description {
     font-size: 15px;
+}
 }
 
 @media (max-width:360px) {
