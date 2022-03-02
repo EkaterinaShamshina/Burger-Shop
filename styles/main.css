@@ -484,7 +484,7 @@ body {
     background: linear-gradient(2.42deg, #F37335 -19.6%, #FBB731 100.79%, #FDC830 100.79%);
 }
 .main img {
-    width: 829px;
+    width: 730px;
     position: absolute;
     right:-168px;
 }
@@ -628,7 +628,7 @@ body {
         padding-top: 42px;
         padding-bottom: 122px;
         padding-left: 15px;
-        flex: 0 0 527px;
+        flex: 0 0 278px;
     }
     .content-title span {
         font-size: 22px;
@@ -648,10 +648,10 @@ body {
         padding: 17px 40px;
     }
     .main img {
-        max-width: 64vw;;
+        max-width: 45vw;;
         height: auto;
         top: 120px;
-        left: -162px;
+        left: -62px;
     }
     .promo {
         padding-top: 107px;
@@ -686,7 +686,22 @@ body {
 
 
 }
-
+@media (max-width:790px) {
+    .main img {
+        max-width: 43vw;
+        top: 44%;
+        left: -68%;
+    } 
+    .content {
+    flex: 0 0 460px;  
+    }
+    .visual {
+        justify-content: flex-start;
+    }
+    .visual-bg {
+        max-width: 119px;
+    }
+}
 /* Modal */
 
 .burger {
@@ -759,6 +774,12 @@ nav {
 .promo {
     padding-top: 95px;
 }
+}
+@media (max-width:665px) {
+.visual-bg {
+    max-width: 0px;
+}
+
 }
 @media (max-width:567px) {
 .header-logo {
@@ -872,6 +893,9 @@ nav {
 .visual-bg {
     width: 0px;
     }
+.content {
+     flex: 0 0 373px;
+    }
 .content-title span {
     font-size: 14px;
     }
@@ -887,23 +911,23 @@ nav {
     padding: 17px 40px;
     }
 .main img {
-    max-width: 51vw;;
+    max-width: 38vw;
     height: auto;
-    top: 276px;
-    left: -363px;
+    top: 255px;
+    left: -170px;
     }
 .cost {
     font-size: 55px;
-}
+    }
 .promo-description {
     font-size: 13px;
-}
+    }
 .free {
     font-size: 39px;
-}
+    }
 .promo-right .promo-description {
     font-size: 15px;
-}
+    }
 }
 
 @media (max-width:360px) {
